@@ -1,0 +1,15 @@
+version: '2'
+shared_volumes:
+  - name: save
+    size: 8Gi
+    type: persistent
+services:
+  factorio:
+    image: factoriotools/factorio
+    ports:
+      - "34197:34197/udp"
+      - "27015:27015/tcp"
+    volumes:
+      - claim: save
+        mount_path: /factorio
+
