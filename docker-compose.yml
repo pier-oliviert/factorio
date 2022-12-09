@@ -5,7 +5,8 @@ shared_volumes:
     type: persistent
 services:
   factorio:
-    image: factoriotools/factorio
+    build:
+      context: "."
     ports:
       - "34197:34197/udp"
       - "27015:27015/tcp"
