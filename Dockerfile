@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM ubuntu:latest
 
 RUN wget https://www.factorio.com/get-download/1.1.72/headless/linux64 -O /srv/headless
 
