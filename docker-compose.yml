@@ -12,5 +12,5 @@ services:
       - "27015:27015/tcp"
     volumes:
       - claim: save
-        mount_path: /factorio
+        mount_path: /srv/data
 
