@@ -1,5 +1,10 @@
 FROM ubuntu:latest
 
+ARG USER=factorio
+ARG GROUP=factorio
+ARG PUID=845
+ARG PGID=845
+
 WORKDIR /srv
 
 RUN apt update -y
